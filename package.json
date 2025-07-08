@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd ../backend && npm install",
-    "start": "cd backend && node server.js"
+    "install": "npm --prefix client install && npm --prefix backend install",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "start": "npm run build && node backend/server.js"
   },
   "engines": {
     "node": "18.x"
