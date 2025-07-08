@@ -1,0 +1,15 @@
+# MernApp/.gitignore
+
+# Ignore environment files
+.env
+
+# Node dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Build outputs
+client/build/
+backend/node_modules/
+client/node_modules/
