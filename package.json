@@ -1,15 +1,12 @@
 {
   "name": "mern-app-root",
   "version": "1.0.0",
-  "lockfileVersion": 3,
-  "requires": true,
-  "packages": {
-    "": {
-      "name": "mern-app-root",
-      "version": "1.0.0",
-      "engines": {
-        "node": "18.x"
-      }
-    }
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "cd backend && node server.js"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
